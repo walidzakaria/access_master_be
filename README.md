@@ -1,4 +1,4 @@
-# RedSea24 App
+# Access Master App
 **Back End Server**
 
 ## Project setup
@@ -16,4 +16,4 @@ pip install -r requirements.txt
     ```
 
 ### Copyrights
-This project is copyrighted to [redsea24.com](redsea24.com)
+This project is copyrighted to [Walid Zakaria](mailto:walidpiano@yahoo.com)
