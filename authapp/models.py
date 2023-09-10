@@ -1,8 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.db.models import Q
-from application.models import Application
-from employee.models import EmployeePosition, Employee, Team
 
 
 # Create your models here.

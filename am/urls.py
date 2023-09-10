@@ -35,11 +35,12 @@ urlpatterns = [
     path('explorer/', include('explorer.urls')),
     path('checkserver/', index, name='index'),
     path('api/auth/', include('authapp.urls')),
-    path('api/accounting/', include('accounting.urls')),
-    path('api/application/', include('application.urls')),
-    path('api/daily_operation/', include('daily_operation.urls')),
-    path('api/employee/', include('employee.urls')),
-    path('api/blog/', include('blog.urls')),
+    path('api/entry/', include('entry.urls')),
+#     path('api/accounting/', include('accounting.urls')),
+#     path('api/application/', include('application.urls')),
+#     path('api/daily_operation/', include('daily_operation.urls')),
+#     path('api/employee/', include('employee.urls')),
+#     path('api/blog/', include('blog.urls')),
     
     # For front-end pages
     path('', index, name='index'),

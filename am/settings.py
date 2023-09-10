@@ -77,6 +77,7 @@ INSTALLED_APPS = [
     'simple_history',
     'explorer',
     'authapp',
+    'entry',
 ]
 
 AUTHENTICATION_BACKENDS = [
