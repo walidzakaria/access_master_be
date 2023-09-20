@@ -7,6 +7,7 @@ from django.db.models import Q
 class User(AbstractUser):
     email = models.EmailField(verbose_name='email',
                               max_length=255, unique=True)
+    branch = models.ForeignKey('entry.branch', on_delete=models.CASCADE, null=True, blank=True)
     REQUIRED_FIELDS = ['username', 'first_name', 'last_name', ]
     USERNAME_FIELD = 'email'
 
@@ -17,37 +18,7 @@ class User(AbstractUser):
         groups = self.groups.first()
         if groups:
             return groups.name
-        return 'employee'
-        
-    
-    def get_colleagues(self):
-        """
-        Retrieves all employee colleagues
-        """
-        # @TODO: fix error here when team leader is invoked
-        employees = EmployeePosition.objects.filter(
-            last_position=True,
-        ).filter(
-            Q(team__team_leader_one__login=self) |
-            Q(team__team_leader_two__login=self)
-        ).all().values_list('employee__login__id', flat=True)
-        result = list(employees)
-        result.append(self.id)
-        return result
-    
-    def get_teams(self):
-        """
-        Retrieves all employee teams
-        """
-        teams = EmployeePosition.objects.filter(
-            last_position=True
-        ).filter(
-            Q(team__team_leader_one__login=self) |
-            Q(team__team_leader_two__login=self) |
-            Q(employee__login=self)
-        ).all().values_list('team__id', flat=True)
-        return list(teams)
-    
+        return 'no group'
 
 
 class LogInfo(models.Model):

@@ -275,39 +275,6 @@ BASE_URL = 'http://51.77.80.83'
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
 
-# # Django Logging Information
-# LOGGING = {
-#     # Define the logging version
-#     'version': 1,
-#     # Enable the existing loggers
-#     'disable_existing_loggers': False,
-
-#     # Define the handlers
-#     'handlers': {
-#         'file': {
-#             'level': 'DEBUG',
-#             'class': 'logging.FileHandler',
-#             'filename': 'djangoapp.log',
-#             # 'maxBytes': 10 * 1024 * 1024,
-#         },
-
-#         'console': {
-#             'class': 'logging.StreamHandler',
-#         },
-#     },
-
-#    # Define the loggers
-#     'loggers': {
-#         'django': {
-#             'handlers': ['file'],
-#             'level': 'DEBUG',
-#             'propagate': True,
-
-#         },
-#     },
-# }
-
-
 AXES_FAILURE_LIMIT = 1000
 AXES_META_PRECEDENCE_ORDER = ('HTTP_X_FORWARD_FOR', 'X_FORWARD_FOR', 'REMOTE_ADDR')
 

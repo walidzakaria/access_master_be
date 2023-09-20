@@ -6,7 +6,7 @@ from .forms import UserForm
 # Register your models here.
 class AdminUser(admin.ModelAdmin):
     form = UserForm
-    list_display = ('username', 'email', 'first_name', 'last_name', )
+    list_display = ('username', 'email', 'first_name', 'last_name', 'branch', )
     search_fields = ('username', 'email', )
 
     # make user password read only if being edited
