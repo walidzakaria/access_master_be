@@ -29,12 +29,11 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'redsea24.com',
-    'www.redsea24.com',
+    'twins-entertainment.com',
+    'www.twins-entertainment.com',
     'localhost',
     '127.0.0.1',
-    '51.77.80.83',
-    '156.200.127.66',
+    '164.92.164.221',
 ]
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
@@ -44,18 +43,17 @@ CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:8080',
     'http://51.77.80.83:8000',
     'http://51.77.80.83',
-    'http://redsea24.com',
-    'http://www.redsea24.com',
-    'https://redsea24.com',
-    'https://www.redsea24.com',
-    'http://156.200.127.66',
+    'http://rtwins-entertainment.com',
+    'http://www.twins-entertainment.com',
+    'https://twins-entertainment.com',
+    'https://www.twins-entertainment.com',
+    'http://164.92.164.221',
 )
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://redsea24.com',
-    'https://www.redsea24.com',
-    'http://51.77.80.83',
-    'http://156.200.127.66',
+    'https://twins-entertainment.com',
+    'https://www.twins-entertainment.com',
+    'http://164.92.164.221',
 ]
 
 # Application definition
@@ -271,7 +269,7 @@ DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-BASE_URL = 'http://51.77.80.83'
+BASE_URL = 'http://164.92.164.221'
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
 
