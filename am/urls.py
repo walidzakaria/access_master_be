@@ -46,6 +46,11 @@ urlpatterns = [
     path('auth/activate/<str:uid>/<str:token>/', register),
     path('auth/password/reset/confirm/<str:uid>/<str:token>/', register),
     path('app/change-password/', index, name='change-password'),
+    
+    path('entry/', index, name='entry'),
+    path('entry/<str:with_id>/', with_id, name='entry-with-id'),
+    path('qr-codes/', index, name='qr-codes'),
+    
 
     # For favicons
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico'))),
