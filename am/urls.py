@@ -48,7 +48,7 @@ urlpatterns = [
     path('app/change-password/', index, name='change-password'),
     
     path('entry/', index, name='entry'),
-    path('entry/<str:with_id>/', with_id, name='entry-with-id'),
+    path('entry/<str:id>/', with_id, name='entry-with-id'),
     path('qr-codes/', index, name='qr-codes'),
     
 
