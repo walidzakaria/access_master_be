@@ -24,8 +24,8 @@ from django.conf import settings
 from django.views.generic import RedirectView
 from rest_framework_swagger.views import get_swagger_view
 
-admin.site.site_header = 'Red Sea 24'
-admin.site.site_title = 'Red Sea 24'
+admin.site.site_header = 'Twins Entertainment'
+admin.site.site_title = 'Twins Entertainment'
 schema_view = get_swagger_view(title='AM API')
 
 
