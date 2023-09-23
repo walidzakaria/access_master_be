@@ -103,7 +103,7 @@ def post_entry(request):
         
         used_qr_code = Entry.objects.filter(qr_code=qr_code.id).first()
         if used_qr_code:
-            return Response(data={'result': 'This QR coe is already used!'}, status=status.HTTP_409_CONFLICT)
+            return Response(data={'result': 'This QR code is already used!'}, status=status.HTTP_409_CONFLICT)
 
         request.data['qr_code'] = qr_code.id
         request.data['user'] = request.user.id
